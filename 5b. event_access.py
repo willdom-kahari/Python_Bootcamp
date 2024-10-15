@@ -6,7 +6,7 @@ has_invitation = input("Do you have an invitation? Yes or No: ").strip().capital
 # 2. Using logical operators (and, or), determine access to different events
 if is_member and age >= 18:
     print("Access to Member's Event.")
-elif is_member and has_invitation == "yes":
+elif is_member and has_invitation:
     print("Access to Exclusive Event.")
 elif has_invitation or age >= 21:
     print("Access to VIP Event.")
